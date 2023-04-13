@@ -1,7 +1,7 @@
 import os
 import csv
 
-csvpath = os.path.join("Resources", "election_data")
+csvpath = os.path.join("PyPoll","Resources", "election_data.csv")
 
 with open(csvpath, encoding='utf8') as csvfile:
     csvreader = csv.reader(csvfile)

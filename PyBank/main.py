@@ -1,9 +1,10 @@
 # modules
 import os
 import csv
+output = os.path.join('Analysis','Budget_Report.txt')
+csvpath = os.path.join("PyBank","Resources", "budget_data.csv")
 
-csvpath = os.path.join("Resources", "budget_data.csv")
-my_report = open('Analysis/Budget_Report.txt', 'w')
+my_report = open(output, 'w')
 
 # # Open the CSV
 with open(csvpath, encoding='utf8') as csvfile:
